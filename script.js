@@ -23,7 +23,7 @@ start: {
 
 smoke: {
     text: "As you are packing up your tent you start to smell smoke. You look and its coming from your fire. Do you add more water?",
-    image: "",
+    image: "images/smoke.jpg",
     choices: [
         {text: "Add more water", next: "trail", karma: +1},
         {text: "LEAVE IT its fine", next: "fire", karma: -5}
@@ -33,7 +33,7 @@ smoke: {
 //make this a bad ending
 fire: {
     text: "After leaving the camp grounds and going down the trail you start to hear some crackling behind you. You turn around and see a forest fire rushing at you.",
-    image: "",
+    image: "images/fire.webp",
     choices: [
         {text: "", next: "", karma: 0},
         {text: "", next: "", karma: 0}
@@ -42,7 +42,7 @@ fire: {
 
 trail: {
     text: "You walk into the forest and come across a split in the trail. You think you know the way, do you still check your map?",
-    image: "",
+    image: "images/trail.jpg",
     choices: [
         { text: "Keep going", next: "forest", karma: -2},
         { text: "Check map", next: "lost", karma: +2}
@@ -51,7 +51,7 @@ trail: {
 
 lost: {
     text: "You go down what you though was a split in the trail but soon you lose your way.",
-    image: "",
+    image: "images/lost.jpg",
     choices: [
         {text: "Go back the way you came", next: "moreLost", karma: -1},
         {text: "Stay where you are", next: "findWay", karma: +2}
@@ -60,7 +60,7 @@ lost: {
 
 findWay: {
     text: "After taking out your map and checking for landmarks you are able to see where the trail is.",
-    image: "",
+    image: "images/fidnway.jpg",
     choices: [
         {text: "Yay", next: "forest", karma: 0},
         {text: "Yippie", next: "forest", karma: 0}
@@ -69,7 +69,7 @@ findWay: {
 
 moreLost: {
     text: "You walk back the way you came but you cant seem to find the trail.",
-    image: "",
+    image: "images/morelost.jpg",
     choices: [
         {text: "Keep going", next: "noises", karma: -3},
         {text: "Stop walking", next: "found", karma: +1}
@@ -79,7 +79,7 @@ moreLost: {
 //ending
 found: {
     text: "You stay where you are for a hour before you are found by a ranger who then guides you out of the park",
-    image: "",
+    image: "images/found.jpg",
     choices: [
         {text: "", next: "", karma: 0},
         {text: "", next: "", karma: 0}
@@ -88,7 +88,7 @@ found: {
 
 noises: {
     text: "As you keep walking you think you hear something following you but every time you stop you don't hear anything.",
-    image: "",
+    image: "images/noises.avif",
     choices: [
         {text: "Turn around", next: "getGot", karma: 0},
         {text: "Keep going forward", next: "noises2", karma: 0}
@@ -97,7 +97,7 @@ noises: {
 
 noises2: {
     text: "As you keep walking the footsteps behind you start to get closer.",
-    image: "",
+    image: "noises2frfr.jpeg",
     choices: [
         {text: "investigate", next: "investigate", karma: 0},
         {text: "Keep going", next: "forest", karma: 0}
@@ -107,7 +107,7 @@ noises2: {
 //ending
 getGot: {
     text: "As you turn around you think you see someone quickly step behind a tree. Then they sprint out and run at you.",
-    image: "",
+    image: "noises2.jpeg",
     choices: [
         {text: "", next: "", karma: 0},
         {text: "", next: "", karma: 0}
@@ -117,7 +117,7 @@ getGot: {
 //ending
 investigate: {
     text: "You whip around and see what can only be decribed like a deer that has gone horribly wrong",
-    image: "",
+    image: "images/investigate.webp",
     choices: [
         {text: "", next: "", karma: 0},
         {text: "", next: "", karma: 0}
@@ -126,7 +126,7 @@ investigate: {
 
 forest: {
     text: "You peel a orange as you walk. What do you do with the peel?",
-    image: "",
+    image: "images/forest.jpg",
     choices: [
         {text: "Leave it on the trail its a plant", next: "rocks", karma: -2},
         {text: "Put it with the rest of your trash", next: "rocks", karma: +2}
@@ -135,7 +135,7 @@ forest: {
 
 rocks: {
     text: "You countinue and come accross a river. As you take a break and see some rock stacks.",
-    image: "",
+    image: "rocks.jpg",
     choices: [
         {text: "Add one of your own", next: "water", karma: -2},
         {text: "Knock them down", next: "water", karma: +2}
@@ -144,7 +144,7 @@ rocks: {
 
 water: {
     text: "After you sit down of a bit you start to get more water. The water looks clean and clear. Do you still filter it?",
-    image: "",
+    image: "images/water.jpg",
     choices: [
         {text: "Yes", next: "dinner", karma: +1},
         {text: "No", next: "sick", karma: -3}
@@ -154,7 +154,7 @@ water: {
 //ending
 sick: {
     text: "After drinking some of the water you start to feel unwell.",
-    image: "",
+    image: "images/sick.jpg",
     choices: [
         {text: "", next: "", karma: 0},
         {text: "", next: "", karma: 0}
@@ -162,8 +162,8 @@ sick: {
 },
 
 dinner: {
-    text: "As you stop for the night you hear one of your friends call scream for help",
-    image: "",
+    text: "As you stop for the night you hear one of your friends scream for help",
+    image: "images/dinner.jpg",
     choices: [
         {text: "Don't react", next: "leftovers", karma: 0},
         {text: "Run to them", next: "getgot2", karma: 0}
@@ -172,8 +172,8 @@ dinner: {
 
 //ending
 getgot2: {
-    text: "You coem into a cl",
-    image: "",
+    text: "You run to them and you see a shadowy figure but that is not your friend",
+    image: "images/getgot2.jpg",
     choices: [
         {text: "", next: "", karma: 0},
         {text: "", next: "", karma: 0}
@@ -182,7 +182,7 @@ getgot2: {
 
 leftovers: {
     text: "You finish making dinner and you still have some food leftover. What do you do with it?",
-    image: "",
+    image: "images/leftovers.jpg",
     choices: [
         {text: "Put it in the tent", next: "bears", karma: -4},
         {text: "Hang it from the tree", next: "gg", karma: +2}
@@ -192,7 +192,7 @@ leftovers: {
 //ending
 gg: {
     text: "You have a good nights rest and will wake up tommarow feeling well rested.",
-    image: "",
+    image: "images/inside_tent.webp",
     choices: [
         {text: "", next: "", karma: 0},
         {text: "", next: "", karma: 0}
@@ -202,7 +202,7 @@ gg: {
 //ending
 bears: {
     text: "You wake up with a bears inside your tent :(",
-    image: "",
+    image: "images/bears.jpg",
     choices: [
         {text: "", next: "", karma: 0},
         {text: "", next: "", karma: 0}
