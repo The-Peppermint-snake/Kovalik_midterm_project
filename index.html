@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hiking and Camping Responabliy</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Forest Adventure</title>
+    <!-- css sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Hiking and Camping Responabliy</header>
-    <br>
-    <img src="images/inside_tent.webp" id="img">
-    <br>
-    <p id="cap">You wake up well rested after a uneventful night camping in the appalachian mountains.</p>
-    <button hidden type="submit" id="opt1">Option 1</button>
-    <button hidden type="submit" id="opt2">Option 2</button>
-    <button type="submit" id="cont">Leave tent</button>
+    <!-- game container -->
+    <div id="game">
+        <!-- scene image -->
+        <img id="img" src="" alt="Story scene">
+
+        <!-- textbox container  -->
+        <div id="textbox">
+            <!-- story caption -->
+            <p id="cap"></p>
+
+            <!-- karma -->
+            <p id="karmaDisplay"></p>
+
+            <!-- player options -->
+            <button id="opt1"></button>
+            <button id="opt2"></button>
+        </div>
+    </div>
+    <!-- load script -->
+    <script src="script.js"></script>
 </body>
 </html>
